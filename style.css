@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  html, body {
+    overflow-x: hidden; 
+    width: 100%; 
+    max-width: 100%; 
+  }
+  body {
+    color: #8ecae6;
+    background-image: url(blurry-gradient-haikei.png);
+    background-position: center;
+    background-size: cover;
+  }
+  header {
+    background-image: url(curtaingb.jpg);
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    padding: 160px 100px;
+    text-align: center;
+    font-size: large;
+  }
+  nav {
+    background-color: #09112a;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  h2 {
+    color: #ffb703;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: xx-large;
+  }
+  ul {
+    line-height: 1.8;
+    padding-left: 20px;
+  }
+  .fee-box {
+    background: #cce0ff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+  footer {
+    text-align: left;
+    padding: 8px;
+    color: white;
+    margin-top: 16px;
+    font-size: xx-small;
+  }
+  p{
+    font-size: larger;
+  }
+  img{
+    width: 100px;
+    padding-right: 20px;
+  }
+  section {
+    padding: 54px 100px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .contact{
+    text-align: center;
+  }
+  .figure {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .figure figure {
+    width: 100%;
+    max-width: 485px; 
+  }
+  .image-wrap {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #000; 
+  }
+  .image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  ul{
+    list-style: none;
+    display: flex;
+  }
+  ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    header {
+      padding: 150px 30px;
+      font-size: large;
+    }
+
+    nav {
+      font-size: 12px;
+    }
+  
+    section {
+      padding: 30px 20px;
+    }
+  
+    .figure {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .figure figure {
+      max-width: 100%;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+
+
+h1, h2{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.subhead{
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+section{
+  font-family: "Biryani", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Contact Section Enhancements */
+.contact {
+  padding: 30px 20px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0 auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.teacher-contact, 
+.student-contact, 
+.lastbox {
+  flex: 1;
+  min-width: 0; /* Prevents overflow issues */
+  padding: 20px;
+  background: rgba(14, 22, 54, 0.7); /* Semi-transparent dark blue */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.contact h3, 
+.contact h4 {
+  color: #ffb703; /* Your accent color */
+  margin-bottom: 10px;
+}
+
+.email-button {
+  color: #8ecae6;
+  word-break: break-all; /* Ensure long emails don't overflow */
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .teacher-contact, 
+  .student-contact, 
+  .lastbox {
+    width: 100%;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .email-button, .contact-container div {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .contact h3 {
+    font-size: 1.3rem;
+  }
+  
+  .contact h4 {
+    font-size: 1.1rem;
+  }
+}
+
+.email-button {
+  display: inline-block;
+  color: #8ecae6; 
+  text-decoration: none;
+}
+
+.email-button:hover {
+  text-decoration: underline; 
+}
+
+.agendas figure figcaption a{
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.logo img{
+  background: transparent;
+  width: 200px;
+  height: auto;
+}
+
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+button{
+  margin-left: auto;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+figcaption{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

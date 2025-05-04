@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNIMUN'25</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+<body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#committees">Committees</a>
+    <a href="#contact">Resources</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="cost">
+    <h2>Cost Estimate per Delegate</h2>
+    <ul>
+      <li>Notepad - ₹20</li>
+      <li>Pens - ₹10</li>
+      <li>Tags - ₹20</li>
+      <li>Placards - ₹10</li>
+      <li>Mics (4 cordless to be rented, 2 with cord from school) - TBD</li>
+      <li>Lunch (Biryani) + hospitality (water bottles, napkins) for 2 days - ₹600</li>
+      <li>Coffee/Tea (Morning) + Juice (Evening) + Snacks for 2 days - ₹100</li>
+      <li>Mementoes & Printing (certificates & brochures) - ₹50–₹100</li>
+    </ul>
+    <div class="fee-box">
+      Estimated Fee per Delegate: ₹<span id="fee">1000</span>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const feeElement = document.getElementById('fee');
+      feeElement.textContent = '1000';
+    });
+  </script>
+</body>
+</html>

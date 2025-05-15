@@ -11,6 +11,10 @@ html, body {
   max-width: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #8ecae6;
   background-image: url(blurry-gradient-haikei.png);

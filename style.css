@@ -139,46 +139,58 @@ button:hover{
   text-align: center;
 }
 
-.figure {
+.agendas .figure {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+.agendas figure {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.figure figure {
+  gap: 20px;
   width: 100%;
-  max-width: 485px;
-}
-
-.image-wrap {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  background-color: #000;
+  max-width: 100%; /* Adjust as needed */
+  background: #09112a;
   border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  align-items: center;
 }
 
-.image-wrap img {
+.agendas .image-wrap {
+  width: 40%; /* Adjust image width percentage */
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.agendas .image-wrap img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.agendas figure figcaption a {
+.agendas figcaption {
+  flex: 1;
+  color: #fff;
+  padding: 10px;
+}
+
+.agendas figcaption a {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  padding-top: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 .read-more-btn {
   display: inline-block;
   margin-top: 8px;
   padding: 6px 12px;
-  background-color: #09112a;
+  background-color: #1a2a6c;
   color: #fff;
   font-size: 0.9em;
   font-weight: bold;
@@ -190,20 +202,6 @@ button:hover{
 
 .read-more-btn:hover {
   background-color: #000;
-}
-
-.caption-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-  padding-top: 15px;
-}
-
-.caption-text {
-  flex: 1;
-  color: #fff;
 }
 
 .logo img {
@@ -283,15 +281,28 @@ button:hover{
     padding: 30px 20px;
   }
 
-  .figure {
+  figure {
     flex-direction: column;
-    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
   }
 
   .contact-container {
     flex-direction: column;
     gap: 15px;
     padding: 0 10px;
+  }
+  
+  .agendas .image-wrap {
+    width: 100%; /* Adjust image width percentage */
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    border-radius: 8px;
+    flex-shrink: 0;
+  }
+
+  .trailer-section {
+    margin: 15px;
   }
 }
 

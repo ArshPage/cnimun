@@ -10,17 +10,24 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+3:wght@400;700&family=Biryani:wght@400;700&display=swap" rel="stylesheet" />
 
 </head>
-  <link rel="stylesheet" href="style.css?v=1.0.5" />
+  <link rel="stylesheet" href="style.css?v=1.0.8" />
 <body id="top">
   <nav>
-    <ul>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul id="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="index.html#about">About</a></li>
       <li><a href="index.html#committees">Committees</a></li>
-      <li><a href="index.html#contact">Resources</a></li>
-      <li><a href="index.html#contact">Schedule</a></li>
-      <li><a href="index.html#contact">Contact</a></li>
+      <li><a href="index.html#committees">Itinerary</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSeK3_3g3O9g8dIW0t-612_0IKbDgXxMOjKsAPBjLtObCk51Bw/viewform?usp=dialog&fbclid=PAQ0xDSwKtQGtleHRuA2FlbQIxMQABp8VSwRXezoIgrsjHAYqLR9ManIHbd8rK16GN7njUbe_zUKBLWqhxSPy8pCvp_aem_sB19oBHKS4uhxTEpF0dOsg">Register</a></li>
+      <li><a href="index.html#contact">Contact Us</a></li>
     </ul>
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
   </nav>
 
   <section id="about">
@@ -56,16 +63,16 @@
     </h1>
     <div class="faces-container">
       <figure>
-        <div class="faces"><img src="medha.jpg.png" alt="Vice Chair of HCC" /></div>
-        <figcaption><strong>Medha Gautam</strong><br> Deputy Director of HCC</a></figcaption>
-      </figure>
-      <figure>
-        <div class="faces"><img src="ana.jpg.png" alt="Chair of HCC" /></div>
+        <div class="faces"><img src="ana.jpg.png" alt="Director of HCC" /></div>
         <figcaption><strong>Anna Thomas</strong><br> Director of HCC</a></figcaption>
       </figure>
       <figure>
         <div class="faces"><img src="neelamana.jpg" alt="Crisis director" /></div>
         <figcaption><strong>Adithyan Neelamana</strong><br> Crisis director</a></figcaption>
+      </figure>
+      <figure>
+        <div class="faces"><img src="medha.jpg.png" alt="Deputy Director of HCC" /></div>
+        <figcaption><strong>Medha Gautam</strong><br> Deputy Director of HCC</a></figcaption>
       </figure>
       <figure>
         <div class="faces"><img src="adhi.jpg.png" alt="Moderator HCC" /></div>
@@ -77,5 +84,16 @@
   <footer>
     <p>&copy; 2025 CNIMUN. All rights reserved.</p>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('nav ul');
+
+    hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    });
+  </script>
+
 </body>
 </html>

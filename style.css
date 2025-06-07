@@ -205,6 +205,25 @@ button:hover{
   background-color: #000;
 }
 
+.matrix-button{
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #1a2a6c;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.matrix-button:hover {
+  background-color: #000;
+}
+
 .logo img {
   background: transparent;
   width: 200px;
@@ -305,6 +324,34 @@ button:hover{
   .trailer-section {
     margin: 15px;
   }
+
+  header{
+    font-size: small;
+  }
+
+  footer p{
+    font-size: xx-small;
+  }
+
+  .subtext p{
+    font-size: small;
+  }
+
+  h2{
+    font-size: x-large;
+  }
+
+  .trailer-section h2{
+    font-size: x-large;
+  }
+
+  p{
+    font-size: medium;
+  }
+
+  .letter .content-wrapper{
+    flex-direction: column;
+  }
 }
 
 .hamburger {
@@ -350,17 +397,104 @@ button:hover{
   border: 3px solid #ffb703;
 }
 
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:16px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:18px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0lax{text-align:left;vertical-align:top}
-
-h3{
-  margin: 10px;
+.letter {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-table{
-  margin: 10px;
+.letter .content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.letter img.general {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.letter .text-content {
+    flex: 1;
+}
+
+.letter h2 {
+    margin-top: 0;
+}
+
+.letter p {
+    margin: 0 0 1em 0;
+    line-height: 1.4;
+}
+
+/* Mobile dropdown styles */
+@media (max-width: 768px) {
+  ul li ul.dropdown {
+    width: 160px;
+    position: static;
+    display: none;
+    background-color: #0a1a3a;
+    padding-left: 20px;
+    margin-top: 5px;
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: small;
+  }
+  
+  ul li.dropdown-active ul.dropdown {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  ul li ul.dropdown li {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+  }
+  
+  ul li ul.dropdown li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li:hover {
+    transform: scale(1);
+    transition: 0s;
+  }
+}
+
+/* Desktop dropdown styles (keep your existing desktop styles) */
+@media (min-width: 769px) {
+  ul li ul.dropdown li{
+    display: block;
+    margin: 4px;
+    border-radius: 5px;
+  }
+
+  ul li ul.dropdown li a{
+    display: block;
+    margin: 12px;
+    border-radius: 5px;
+  }
+
+  ul li ul.dropdown li:hover{
+    background-color: #09112a;
+    transform: scale(1);
+  }
+
+  ul li ul.dropdown{
+    width: 200%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    background-color: #000;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+  }
+
+  ul li:hover ul.dropdown{
+    display: block;
+  }
 }

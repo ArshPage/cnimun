@@ -438,7 +438,6 @@ button:hover{
     display: none;
     background-color: #0a1a3a;
     padding-left: 20px;
-    margin-top: 5px;
     border-radius: 5px;
     box-shadow: none;
     font-size: small;
@@ -458,7 +457,6 @@ button:hover{
   }
   
   ul li ul.dropdown li {
-    padding: 8px 0;
     border-bottom: 1px solid #333;
   }
   
